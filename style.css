@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-image:url("background.jpg") ;
+    background-size: cover;
+    background-position: center ;
+  
+  }
+  h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .chat{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .2);
+  
+  }
+  .chat h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #f3f3fb;
+  }
+  .msg{
+    max-width: 350px;
+    height: 400px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    
+    overflow-y: scroll;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .input_msg{
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    width: 70%;
+    font-size: 20px;
+    padding: 0.4rem 1.3rem;
+    border-radius: 5px;
+
+  }
+  .input_msg button{
+    background-color:0d0d22;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+  }
+  .input_msg button:hover{
+    background-color: #f3f3fb;
+    color: #0d0d22;
+    border: #0d0d22 2px solid;
+  }
+  .msg p{
+    background-color: rgb(194, 192, 192);
+    padding: 0.4rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .msg p span{
+    display: block;
+    font-size: x-small;
+    font-family: cursive;
+  }
+  .msg .sender{
+    background-color:#0d0d22;
+    color: #f7f7f9;
+    align-self: end;
+  }
+  .msg p .sender span{
+    background-color:#0d0d22;
+    color: #f7f7f9;
+    align-self: end;
+    
+  }
